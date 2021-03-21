@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Flex Box</title>
+</head>
+
+
+<body>
+  <head class="wrapper">
+    <h1 class="titulo1">Flex Box</h1>
+
+    <h3 class="subtitle">Alinhando itens no container</h3>
+  
+    <h2 class="titulo2">Justify-Content</h2>
+  
+    <h3 class="subtitle">Os itens são justificados a partir do alinhamento definido pelo flex-direction</h3>
+  </head>
+
+  <section class="wrapper justify-content">
+
+    <article class="container">
+      <p>flex-start (row)</p>
+      <div class="boxes start">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+
+    </article>
+
+    <article class="container">
+      <p>flex-start (row-reverse)</p>
+      <div class="boxes start row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+
+    </article>
+
+    <article class="container">
+      <p>flex-start (column)</p>
+      <div class="boxes start column">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>flex-start (column-reverse)</p>
+      <div class="boxes start column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>flex-end (row)</p>
+      <div class="boxes end">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>flex-end (row-reverse)</p>
+      <div class="boxes end row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>flex-end (column)</p>
+      <div class="boxes end column">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>flex-end (column-reverse)</p>
+      <div class="boxes end column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>center (row)</p>
+      <div class="boxes center">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>center (row-reverse)</p>
+      <div class="boxes center row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>center (column)</p>
+      <div class="boxes center column ">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>center (column-reverse)</p>
+      <div class="boxes center column-reverse ">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-between (row)</p>
+      <div class="boxes between">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-between (row-reverse)</p>
+      <div class="boxes between row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-between (column)</p>
+      <div class="boxes between column">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p class="fixFontSize">space-between (column-reverse)</p>
+      <div class="boxes between column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-around (row)</p>
+      <div class="boxes around">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-around (row-reverse)</p>
+      <div class="boxes around row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-around (column)</p>
+      <div class="boxes around column">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p class="fixFontSize">space-around (column-reverse)</p>
+      <div class="boxes around column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-evenly (row)</p>
+      <div class="boxes evenly">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-evenly (row-reverse)</p>
+      <div class="boxes evenly row-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p>space-evenly (column)</p>
+      <div class="boxes evenly column">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+
+    <article class="container">
+      <p class="fixFontSize">space-evenly (column-reverse)</p>
+      <div class="boxes evenly column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+  </section>
+
+  <h2 class="subtitle">Lembrar:</h2>
+  <section class="wrapper notes ">
+    <!-- inicio flex-start -->
+    <div class="note yellow">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-start (row) <br ><br>
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> linhas</mark>, 
+          <br>alinhamento: <mark>superior e esquerda </mark> <br> posição: <mark>horizontal</mark>
+          (começa do início horizontal do container)
+        </p>
+    </div>
+  
+    <div class="note blue">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-start (row-reverse) <br ><br >
+          Ordem: <mark>reversa</mark>, <br>
+          por:<mark> linhas</mark>, 
+          <br>alinhamento: <mark>superior e direita  </mark> <br> posição: <mark>horizontal</mark>
+          (começa do final horizontal do container)
+        </p>
+    </div>
+    
+    <div class="note pink" >
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-start (column) <br ><br >
+          
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> colunas</mark>, 
+          <br>alinhamento: <mark>superior e esquerda</mark> <br> posição: <mark>vertical</mark>
+          (começa do início vertical do container)
+        </p>
+    </div>
+
+    <div class="note yellow">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-start: (column-reverse)  <br ><br >
+
+          Ordem: <mark>reversa</mark>, <br>
+          por:<mark> colunas</mark>, 
+          <br>alinhamento: <mark>inferior e esquerda</mark> <br> posição: <mark>vertical</mark>
+          (começa do final vertical do container)
+        </p>
+    </div>
+    <!-- fim flex-start -->
+  
+    <!-- inicio flex-end -->
+    <div class="note blue">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-end (row) <br ><br >
+          
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> linhas</mark>, 
+          <br>alinhamento: <mark>superior e direita  </mark> <br> posição: <mark>horizontal</mark>
+          (começa do final horizontal do container)
+        </p>
+    </div>
+    
+    <div class="note pink" >
+      <div class="line"></div>
+      <p>
+        justify-content <br > flex-end (row-reverse) <br ><br >
+
+        Ordem: <mark>reversa</mark>, <br>
+        por:<mark> linhas</mark>, 
+        <br>alinhamento: <mark>superior e esquerda </mark> <br> 
+        posição: <mark>horizontal</mark>
+        (começa do início horizontal do container)
+      </p>
+    </div>
+
+    <div class="note yellow">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-end (column) <br ><br >
+
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> colunas</mark>, 
+          <br>alinhamento: <mark>inferior e esquerda </mark> <br> 
+          posição: <mark>horizontal</mark>
+          (começa do final vertical do container)
+        </p>
+    </div>
+  
+    <div class="note blue">
+      <div class="line"></div>
+        <p>
+          justify-content <br > flex-end: (column-reverse)  <br ><br >
+
+          Ordem: <mark>reversa</mark>, <br>
+          por:<mark> colunas</mark>, 
+          <br>alinhamento: <mark>superior e esquerda </mark> <br> 
+          posição: <mark>horizontal</mark>
+          (começa do início vertical do container)
+        </p>
+    </div>
+    <!-- fim flex-end -->
+
+    <!-- inicio flex-center -->
+    <div class="note pink" >
+      <div class="line"></div>
+      <p>
+        justify-content <br > flex-center (row) <br ><br >
+        
+        Ordem: <mark>padrão</mark>, <br>
+        por:<mark> linhas</mark>, 
+        <br>alinhamento: <mark>superior e centro </mark> <br> 
+        posição: <mark>horizontal</mark>
+        (começa do centro horizontal do container)
+      </p>
+    </div>
+
+    <div class="note yellow">
+      <div class="line"></div>
+      <p>
+        justify-content <br > flex-center (row-reverse) <br ><br >
+        
+        Ordem: <mark>reversa</mark>, <br>
+        por:<mark> linhas</mark>, 
+        <br>alinhamento: <mark>superior e centro </mark> <br> 
+        posição: <mark>horizontal</mark>
+        (começa do centro horizontal do container)
+      </p>
+    </div>
+  
+    <div class="note blue">
+      <div class="line"></div>
+      <p>
+        justify-content <br > flex-center (column) <br ><br >
+        
+        Ordem: <mark>padrão</mark>, <br>
+        por:<mark> colunas</mark>, 
+        <br>alinhamento: <mark>esquerdo e centro </mark> <br> 
+        posição: <mark>vertical</mark>
+        (começa do centro vertical do container)
+      </p>
+    </div>
+
+    <div class="note pink" >
+      <div class="line"></div>
+      <p>
+        justify-content <br > flex-center (column-reverse) <br ><br >
+        
+        Ordem: <mark>reversa</mark>, <br>
+        por:<mark> colunas</mark>, 
+        <br>alinhamento: <mark>esquerdo e centro </mark> <br> 
+        posição: <mark>vertical</mark>
+        (começa do centro vertical do container)
+      </p>
+    </div>
+     <!-- fim flex-center -->
+
+     <!-- inicio space-between -->
+     <div class="note yellow">
+      <div class="line"></div>
+        <p>
+          justify-content <br > space-between (row) <br ><br>
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> linhas</mark>, 
+          <br>alinhamento: <br><mark>itens das extremidades colam nas bordas do container e os centrais tem espaçamentos distribuidos igualmente </mark> <br> posição: <mark>horizontal</mark>
+          (começa do início horizontal do container)
+        </p>
+    </div>
+  
+    <div class="note blue">
+      <div class="line"></div>
+        <p>
+          justify-content <br > space-between (row-reverse) <br ><br>
+          Ordem: <mark>reversa</mark>, <br>
+          por:<mark> linhas</mark>, 
+          <br>alinhamento:<br> <mark>itens das extremidades colam nas bordas do container e os centrais tem espaçamentos distribuidos igualmente </mark> <br> posição: <mark>horizontal</mark>
+          (começa do final horizontal do container)
+        </p>
+    </div>
+    
+    <div class="note pink" >
+      <div class="line"></div>
+        <p>
+          justify-content <br > space-between (column) <br ><br>
+          Ordem: <mark>padrão</mark>, <br>
+          por:<mark> colunas</mark>, 
+          <br>alinhamento:<br> <mark>itens das extremidades colam nas bordas do container e os centrais tem espaçamentos distribuidos igualmente </mark> <br> posição: <mark>vertical</mark>
+          (começa do início vertical do container)
+        </p>
+    </div>
+
+    <div class="note yellow">
+      <div class="line"></div>
+      <p>
+        justify-content <br > space-between (column-reverse) <br ><br>
+        Ordem: <mark>reverso</mark>, <br>
+        por:<mark> colunas</mark>, 
+        <br>alinhamento: <br> <mark>itens das extremidades colam nas bordas do container e os centrais tem espaçamentos distribuidos igualmente </mark> <br> posição: <mark>vertical</mark>
+        (começa do final vertical do container)
+      </p>
+    </div>
+  <!-- fim space-between -->
+
+  <!-- inicio space-around-->
+  <div class="note blue">
+    <div class="line"></div>
+      <p>
+        justify-content <br > space-around (row) <br ><br >
+        
+        Ordem: <mark>padrão</mark>, <br>
+        por:<mark> linhas</mark>, 
+        <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades  </mark> <br> posição: <mark>horizontal</mark>
+        (começa do início horizontal do container)
+      </p>
+  </div>
+  
+  <div class="note pink" >
+    <div class="line"></div>
+      <p>
+        justify-content <br > space-around (row-reverse) <br ><br >
+
+        Ordem: <mark>reverse</mark>, <br>
+        por:<mark> linhas</mark>, 
+        <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades</mark> <br> 
+        posição: <mark>horizontal</mark>
+        (começa do final horizontal do container)
+      </p>
+  </div>
+
+  <div class="note yellow">
+    <div class="line"></div>
+    <p>
+      justify-content <br > space-around (column) <br ><br >
+
+      Ordem: <mark>padrão</mark>, <br>
+      por:<mark> colunas</mark>, 
+      <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades</mark> <br> 
+      posição: <mark>vertical</mark>
+      (começa do início vertical do container)
+    </p>
+  </div>
+
+  <div class="note blue">
+    <div class="line"></div>
+      <p>
+        justify-content <br > space-around: (column-reverse)  <br ><br >
+
+        Ordem: <mark>reversa</mark>, <br>
+        por:<mark> colunas</mark>, 
+        <br>alinhamento: <mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades </mark> <br> 
+        posição: <mark>vertical</mark>
+        (começa do final vertical do container)
+      </p>
+  </div>
+  <!-- fim space-around -->
+
+  <!-- início space-evenly -->
+  <div class="note pink" >
+    <div class="line"></div>
+    <p>
+      justify-content <br > space-evenly (row) <br ><br >
+      
+      Ordem: <mark>padrão</mark>, <br>
+      por:<mark> linhas</mark>, 
+      <br>alinhamento: <br><mark>Todos os itens possuem espaçamentos exatamente iguais</mark> <br> 
+      posição: <mark>horizontal</mark>
+      (começa do início horizontal do container)
+    </p>
+  </div>
+
+  <div class="note yellow">
+    <div class="line"></div>
+    <p>
+      justify-content <br > space-evenly (row-reverse) <br ><br >
+      
+      Ordem: <mark>reversa</mark>, <br>
+      por:<mark> linhas</mark>, 
+      <br>alinhamento:<br > <mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
+      posição: <mark>horizontal</mark>
+      (começa do final horizontal do container)
+    </p>
+  </div>
+
+  <div class="note blue">
+    <div class="line"></div>
+    <p>
+      justify-content <br > space-evenly (column) <br ><br >
+      
+      Ordem: <mark>padrão</mark>, <br>
+      por:<mark> colunas</mark>, 
+      <br>alinhamento:<br > <mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
+      posição: <mark>vertical</mark>
+      (começa do início vertical do container)
+    </p>
+  </div>
+
+  <div class="note pink" >
+    <div class="line"></div>
+    <p>
+      justify-content <br > space-evenly (column-reverse) <br ><br >
+      
+      Ordem: <mark>reversa</mark>, <br>
+      por:<mark> colunas</mark>, 
+      <br>alinhamento: <br ><mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
+      posição: <mark>vertical</mark>
+      (começa do final horizontal do container)
+    </p>
+  </div>
+  <!-- fim space-evenly -->
+
+  <!-- início anotaçoes gerais -->
+  <div class="note blue">
+    <div class="line"></div>
+      <p>
+        Flex-direction <br ><br >
+
+        Direções: <br>
+        <mark>row</mark>, <br>
+        <mark>row-reverse</mark>, <br>
+        <mark>column</mark>, <br>
+        <mark>column-reverse</mark> 
+      </p>
+  </div>
+
+  <div class="note pink">
+    <div class="line"></div>
+      <p>
+        justify-content <br ><br >
+
+        Alinhamentos: <br>
+        <mark>flex-start</mark>, <br>
+        <mark>flex-end</mark>, <br>
+        <mark>center</mark>, <br>
+        <mark>space-between</mark>, 
+        <mark>space-around</mark>, 
+        <mark>space-evenly</mark> 
+      </p>
+  </div>
+
+  <div class="note yellow">
+    <div class="line"></div>
+      <p>
+        Altura e largura <br><br>
+        <mark>caso</mark> os itens <mark>não possuam altura e/ou largura</mark>, eles <mark>ficarão</mark>  como "stretch", serão <mark>esticados conforme a altura e largura</mark> <mark>do container.</mark>
+      </p>
+  </div>
+  <!-- fim anotaçoes gerais -->
+  </section>
+</body>
+</html>

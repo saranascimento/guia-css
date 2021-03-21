@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -webkit-pictograph;
+}
+
+:root {
+  --bg-yellow: #ffab0f;
+  --bg-blue: #247afd;
+  --bg-pink: #fe46a5;
+
+  --bg-dark-yellow: #dc930c;
+  --bg-dark-blue: #0057da;
+  --bg-dark-pink: #e91e63;
+
+  --bg-mark-yellow: #ffff006e;
+  --bg-mark-blue: #00e4ff6b;
+  --bg-mark-pink: #ff008991;
+}
+
+body {
+  background-color: #ececec;
+}
+
+.titulo1,
+.titulo2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+
+.titulo2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+}
+
+.wrapper .container {
+  width: calc(25% - 40px);
+  height: 340px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 215px;
+}
+
+.wrapper .container p {
+  text-align: center;
+  padding: 4px;
+}
+
+.wrapper .container p.fixFontSize {
+  font-size: 14px;
+  padding: 6px;
+}
+
+.wrapper .boxes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 3px solid #888;
+  flex-wrap: wrap;
+  max-height: 300px;
+}
+
+.wrapper .boxes .box {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin: 2px;
+  padding: 2px 8px;
+  width: 50px;
+}
+
+.wrapper .boxes .box.yellow {
+  background-color: #ffab0f;
+}
+
+.wrapper .boxes .box.blue {
+  background-color: #247afd;
+}
+
+.wrapper .boxes .box.pink {
+  background-color: #fe46a5;
+}
+
+/* flex-direction */
+.wrapper .boxes.column {
+  flex-direction: column;
+}
+.wrapper .boxes.row-reverse {
+  flex-direction: row-reverse;
+}
+.wrapper .boxes.column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Alinhamentos */
+/* justify-content */
+.justify-content .container .boxes.start {
+  justify-content: flex-start;
+}
+.justify-content .container .boxes.end {
+  justify-content: flex-end;
+}
+.justify-content .container .boxes.center {
+  justify-content: center;
+}
+.justify-content .container .boxes.between {
+  justify-content: space-between;
+}
+.justify-content .container .boxes.around {
+  justify-content: space-around;
+}
+.justify-content .container .boxes.evenly {
+  justify-content: space-evenly;
+}
+/* fim justify-content */
+
+/* notes */
+.notes {
+  background-color: #1480006b;
+  border: 8px solid saddlebrown;
+  max-width: 1165px;
+}
+
+.note {
+  min-width: 230px;
+  height: 322px;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 0px 1px 3px 0px #272626;
+  width: calc(16% - 20px);
+  position: relative;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: gray #c1bcb8;
+}
+
+.note::-webkit-scrollbar {
+  width: 4px;
+}
+
+.note::-webkit-scrollbar-track {
+  background: gray;
+}
+
+.note::-webkit-scrollbar-thumb {
+  background-color: #c1bcb8;
+  border-radius: 5px;
+}
+
+.note p {
+  letter-spacing: 3px;
+  top: 20%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  font-family: cursive;
+}
+
+.line {
+  width: 100%;
+  height: 25px;
+  position: sticky;
+  top: 0px;
+}
+
+.line:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  left: 47%;
+  top: 6px;
+  border: 4px solid #c1bcb8;
+  box-shadow: 0px 0px 2px 0px #524f4f;
+}
+
+.note.pink {
+  background-color: #fe46a5;
+}
+.note.pink mark {
+  background-color: var(--bg-mark-pink);
+}
+.note.pink .line {
+  background: linear-gradient(#fe46a5, #e91e63);
+}
+
+.note.yellow {
+  background-color: var(--bg-yellow);
+}
+.note.yellow mark {
+  background-color: var(--bg-mark-yellow);
+}
+
+.note.yellow .line {
+  background: linear-gradient(var(--bg-yellow), var(--bg-dark-yellow));
+}
+
+.note.blue {
+  background-color: var(--bg-blue);
+}
+.note.blue mark {
+  background-color: var(--bg-mark-blue);
+}
+.note.blue .line {
+  background: linear-gradient(var(--bg-blue), var(--bg-dark-blue));
+}
