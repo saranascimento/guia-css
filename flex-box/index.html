@@ -10,15 +10,15 @@
 
 
 <body>
-  <head class="wrapper">
-    <h1 class="titulo1">Flex Box</h1>
+  <header>
+    <h1 class="title1">Flex Box</h1>
 
     <h3 class="subtitle">Alinhando itens no container</h3>
   
-    <h2 class="titulo2">Justify-Content</h2>
+    <h2 class="title2">Justify-Content</h2>
   
     <h3 class="subtitle">Os itens são justificados a partir do alinhamento definido pelo flex-direction</h3>
-  </head>
+  </header>
 
   <section class="wrapper justify-content">
 
@@ -313,8 +313,67 @@
     </article>
   </section>
 
+  <h2 class="title2">Tente você mesmo:</h2>
+  <section class="wrapper try-yourself">
+    <div class="form">
+      <form action="/action_page.php">
+        <p><b>Escolha a direção inicial do conteúdo:</b></p>
+        <input type="radio" id="row" name="direction" value="row">
+        <label for="row">flex-direction: row;</label><br>
+        <input type="radio" id="rowReverse" name="direction" value="rowReverse">
+        <label for="rowReverse">flex-direction: row-reverse;</label><br>
+        <input type="radio" id="column" name="direction" value="column">
+        <label for="column">flex-direction: column;</label><br>
+        <input type="radio" id="columnReverse" name="direction" value="columnReverse">
+        <label for="columnReverse">flex-direction: column-reverse;</label>
+      
+        <br><br>  
+      
+        <p><b>Como quer justificar o conteúdo?</b></p>
+        <input type="radio" id="flexStart" name="justifyContent" value="flexStart">
+        <label for="flexStart">justify-content: flex-start;</label><br>
+        <input type="radio" id="flexEnd" name="justifyContent" value="flexEnd">
+        <label for="flexEnd">justify-content: flex-end;</label><br>
+        <input type="radio" id="center" name="justifyContent" value="center">
+        <label for="center">justify-content: center; </label><br>
+        <input type="radio" id="spaceBetween" name="justifyContent" value="spaceBetween">
+        <label for="spaceBetween">justify-content: space-between;</label><br>
+        <input type="radio" id="spaceAround" name="justifyContent" value="spaceAround">
+        <label for="spaceAround">justify-content: space-around;</label><br>
+        <input type="radio" id="spaceEvenly" name="justifyContent" value="spaceEvenly">
+        <label for="spaceEvenly">justify-content: space-evenly; </label><br>
+        <br>  
+      
+        <p><b>Altura dos itens:</b></p>
+        <input type="radio" id="inicialHeight" name="height" value="inicialHeight">
+        <label for="inicialHeight">height: initial;</label><br>
+        <input type="radio" id="height100" name="height" value="height100">
+        <label for="height100">height: 100px;</label><br>
+        <br>
+
+        <p><b>Largura dos itens:</b></p>
+        <input type="radio" id="inicialWidth" name="width" value="width80">
+        <label for="inicialWidth">width: initial;</label><br>
+        <input type="radio" id="width80" name="width" value="width80">
+        <label for="width80">width: 80px;</label><br> <br> 
+
+        <input type="submit" value="Justificar">
+      </form>
+    </div>
+    <article class="container">
+      <div class="boxes evenly column-reverse">
+        <div class="box yellow">1</div>
+        <div class="box blue">2</div>
+        <div class="box pink">3</div>
+        <div class="box yellow">4</div>
+        <div class="box blue">5</div>
+        <div class="box pink">6</div>
+      </div>
+    </article>
+  </section>
+
   <h2 class="subtitle">Lembrar:</h2>
-  <section class="wrapper notes ">
+  <footer class="wrapper notes ">
     <!-- inicio flex-start -->
     <div class="note yellow">
       <div class="line"></div>
@@ -525,7 +584,7 @@
         Ordem: <mark>padrão</mark>, <br>
         por:<mark> linhas</mark>, 
         <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades  </mark> <br> posição: <mark>horizontal</mark>
-        (começa do início horizontal do container)
+        (começa do centro horizontal do container e distribui os espaçamentos)
       </p>
   </div>
   
@@ -538,7 +597,7 @@
         por:<mark> linhas</mark>, 
         <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades</mark> <br> 
         posição: <mark>horizontal</mark>
-        (começa do final horizontal do container)
+        (começa do centro horizontal do container e distribui os espaçamentos)
       </p>
   </div>
 
@@ -551,7 +610,7 @@
       por:<mark> colunas</mark>, 
       <br>alinhamento: <br><mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades</mark> <br> 
       posição: <mark>vertical</mark>
-      (começa do início vertical do container)
+      (começa do centro vertical do container e distribui os espaçamentos)
     </p>
   </div>
 
@@ -564,7 +623,7 @@
         por:<mark> colunas</mark>, 
         <br>alinhamento: <mark>Os itens centrais possuem duas vezes o espaçamento dos itens das extremidades </mark> <br> 
         posição: <mark>vertical</mark>
-        (começa do final vertical do container)
+        (começa do centro vertical do container e distribui os espaçamentos)
       </p>
   </div>
   <!-- fim space-around -->
@@ -579,7 +638,7 @@
       por:<mark> linhas</mark>, 
       <br>alinhamento: <br><mark>Todos os itens possuem espaçamentos exatamente iguais</mark> <br> 
       posição: <mark>horizontal</mark>
-      (começa do início horizontal do container)
+      (começa do centro horizontal do container e distribui os espaçamentos)
     </p>
   </div>
 
@@ -592,7 +651,7 @@
       por:<mark> linhas</mark>, 
       <br>alinhamento:<br > <mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
       posição: <mark>horizontal</mark>
-      (começa do final horizontal do container)
+      (começa do centro horizontal do container e distribui os espaçamentos)
     </p>
   </div>
 
@@ -605,7 +664,7 @@
       por:<mark> colunas</mark>, 
       <br>alinhamento:<br > <mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
       posição: <mark>vertical</mark>
-      (começa do início vertical do container)
+      (começa do centro vertical do container e distribui os espaçamentos)
     </p>
   </div>
 
@@ -618,7 +677,7 @@
       por:<mark> colunas</mark>, 
       <br>alinhamento: <br ><mark>Todos os itens possuem espaçamentos exatamente iguais </mark> <br> 
       posição: <mark>vertical</mark>
-      (começa do final horizontal do container)
+      (começa do centro vertical do container e distribui os espaçamentos)
     </p>
   </div>
   <!-- fim space-evenly -->
@@ -660,6 +719,6 @@
       </p>
   </div>
   <!-- fim anotaçoes gerais -->
-  </section>
+  </footer>
 </body>
 </html>

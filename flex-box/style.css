@@ -23,15 +23,15 @@ body {
   background-color: #ececec;
 }
 
-.titulo1,
-.titulo2 {
+.title1,
+.title2 {
   display: flex;
   justify-content: center;
   margin: 20px;
   text-align: center;
 }
 
-.titulo2 {
+.title2 {
   font-size: 28px;
   text-align: center;
 }
@@ -136,6 +136,45 @@ body {
   justify-content: space-evenly;
 }
 /* fim justify-content */
+
+/* início try-yourself */
+.wrapper.try-yourself {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.wrapper.try-yourself .form {
+  padding-left: 20px;
+}
+
+.wrapper.try-yourself label {
+  font-size: 1.2em;
+}
+
+.wrapper.try-yourself .container {
+  height: 400px;
+  width: 430px;
+}
+.wrapper.try-yourself .boxes {
+  max-height: 400px;
+}
+.wrapper.try-yourself .boxes .box {
+  height: 100px;
+  width: 80px;
+}
+.wrapper.try-yourself input[type="submit"] {
+  padding: 6px 30px;
+  background: #28ff65;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #3ce755;
+  font-size: 18px;
+}
+
+.wrapper.try-yourself input[type="submit"]:hover {
+  background: #46fe79;
+}
 
 /* notes */
 .notes {
