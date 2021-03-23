@@ -12,3 +12,7 @@ sobre como ele se comporta conforme as direções do eixo principal.
 
 Tentei criar o projeto mais simplificado possível, e ainda assim, cheio de informações e interações para o melhor entendimento.
 Espero que curtam <3
+
+### Alinhando com justify-content
+
+![Alinhando com justify-content](https://github.com/saranascimento/guia-css/blob/main/flex-box/assets/to-readme/justify-content.gif)
