@@ -165,19 +165,6 @@ body {
   height: 100px;
   width: 103px;
 }
-.wrapper.try-yourself button {
-  padding: 6px 30px;
-  background: #28ff65;
-  outline: none;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 1px solid #3ce755;
-  font-size: 18px;
-}
-
-.wrapper.try-yourself button:hover {
-  background: #46fe79;
-}
 
 /* notes */
 .notes {
