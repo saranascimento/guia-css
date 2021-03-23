@@ -146,6 +146,9 @@ body {
 .wrapper.try-yourself .form {
   padding-left: 20px;
 }
+.wrapper.try-yourself .form fieldset {
+  border: none;
+}
 
 .wrapper.try-yourself label {
   font-size: 1.2em;
@@ -160,9 +163,9 @@ body {
 }
 .wrapper.try-yourself .boxes .box {
   height: 100px;
-  width: 80px;
+  width: 103px;
 }
-.wrapper.try-yourself input[type="submit"] {
+.wrapper.try-yourself button {
   padding: 6px 30px;
   background: #28ff65;
   outline: none;
@@ -172,7 +175,7 @@ body {
   font-size: 18px;
 }
 
-.wrapper.try-yourself input[type="submit"]:hover {
+.wrapper.try-yourself button:hover {
   background: #46fe79;
 }
 

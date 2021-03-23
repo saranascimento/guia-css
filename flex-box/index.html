@@ -316,58 +316,61 @@
   <h2 class="title2">Tente você mesmo:</h2>
   <section class="wrapper try-yourself">
     <div class="form">
-      <form action="/action_page.php">
-        <p><b>Escolha a direção inicial do conteúdo:</b></p>
-        <input type="radio" id="row" name="direction" value="row">
+      <form name='alignment' >
+       <fieldset>
+        <legend><b>Escolha a direção inicial do conteúdo:</b></legend>
+        <input type="radio" id="row" name="direction" value="row" checked>
         <label for="row">flex-direction: row;</label><br>
-        <input type="radio" id="rowReverse" name="direction" value="rowReverse">
+        <input type="radio" id="rowReverse" name="direction" value="row-reverse" >
         <label for="rowReverse">flex-direction: row-reverse;</label><br>
-        <input type="radio" id="column" name="direction" value="column">
+        <input type="radio" id="column" name="direction" value="column" >
         <label for="column">flex-direction: column;</label><br>
-        <input type="radio" id="columnReverse" name="direction" value="columnReverse">
+        <input type="radio" id="columnReverse" name="direction" value="column-reverse" >
         <label for="columnReverse">flex-direction: column-reverse;</label>
       
         <br><br>  
       
-        <p><b>Como quer justificar o conteúdo?</b></p>
-        <input type="radio" id="flexStart" name="justifyContent" value="flexStart">
+        <legend><b>Como quer justificar o conteúdo?</b></legend>
+        <input type="radio" id="flexStart" name="justifyContent" value="flex-start" checked>
         <label for="flexStart">justify-content: flex-start;</label><br>
-        <input type="radio" id="flexEnd" name="justifyContent" value="flexEnd">
+        <input type="radio" id="flexEnd" name="justifyContent" value="flex-end">
         <label for="flexEnd">justify-content: flex-end;</label><br>
         <input type="radio" id="center" name="justifyContent" value="center">
         <label for="center">justify-content: center; </label><br>
-        <input type="radio" id="spaceBetween" name="justifyContent" value="spaceBetween">
+        <input type="radio" id="spaceBetween" name="justifyContent" value="space-between">
         <label for="spaceBetween">justify-content: space-between;</label><br>
-        <input type="radio" id="spaceAround" name="justifyContent" value="spaceAround">
+        <input type="radio" id="spaceAround" name="justifyContent" value="space-around">
         <label for="spaceAround">justify-content: space-around;</label><br>
-        <input type="radio" id="spaceEvenly" name="justifyContent" value="spaceEvenly">
+        <input type="radio" id="spaceEvenly" name="justifyContent" value="space-evenly">
         <label for="spaceEvenly">justify-content: space-evenly; </label><br>
         <br>  
       
-        <p><b>Altura dos itens:</b></p>
-        <input type="radio" id="inicialHeight" name="height" value="inicialHeight">
+        <legend><b>Altura dos itens:</b></legend>
+        <input type="radio" id="inicialHeight" name="height" value="initial">
         <label for="inicialHeight">height: initial;</label><br>
-        <input type="radio" id="height100" name="height" value="height100">
+        <input type="radio" id="height100" name="height" value="100px" checked>
         <label for="height100">height: 100px;</label><br>
         <br>
 
-        <p><b>Largura dos itens:</b></p>
-        <input type="radio" id="inicialWidth" name="width" value="width80">
+        <legend><b>Largura dos itens:</b></legend>
+        <input type="radio" id="inicialWidth" name="width" value="initial">
         <label for="inicialWidth">width: initial;</label><br>
-        <input type="radio" id="width80" name="width" value="width80">
-        <label for="width80">width: 80px;</label><br> <br> 
+        <input type="radio" id="width80" name="width" value="103px" checked>
+        <label for="width80">width: 103px;</label><br> <br> 
 
-        <input type="submit" value="Justificar">
+       </fieldset>
       </form>
+
+
     </div>
-    <article class="container">
-      <div class="boxes evenly column-reverse">
-        <div class="box yellow">1</div>
-        <div class="box blue">2</div>
-        <div class="box pink">3</div>
-        <div class="box yellow">4</div>
-        <div class="box blue">5</div>
-        <div class="box pink">6</div>
+    <article class="container" >
+      <div class="boxes" id="try-justify-boxes">
+        <div class="box yellow try-justify-box">1</div>
+        <div class="box blue try-justify-box">2</div>
+        <div class="box pink try-justify-box">3</div>
+        <div class="box yellow try-justify-box">4</div>
+        <div class="box blue try-justify-box">5</div>
+        <div class="box pink try-justify-box">6</div>
       </div>
     </article>
   </section>
@@ -720,5 +723,6 @@
   </div>
   <!-- fim anotaçoes gerais -->
   </footer>
+  <script src="./javascript.js"></script>
 </body>
 </html>
